@@ -17,6 +17,10 @@ namespace Example
             byte[] info = new UTF8Encoding(true).GetBytes("Hello world");
             fs.Write(info, 0, info.Length);
             fs.Close();
+
+            StreamReader sr = new StreamReader(path);
+            string fileText = sr.ReadToEnd();
+            System.Diagnostics.Debug.WriteLine(fileText);
         }
     }
 }
