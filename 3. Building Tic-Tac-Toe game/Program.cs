@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 
 namespace Example
 {
@@ -78,7 +78,7 @@ namespace Example
                 }
                 else
                 {
-                    Console.WriteLine("Player 2's turn");
+                    Console.WriteLine("Player 1's turn");
                 }
 
                 Console.WriteLine("\n");
