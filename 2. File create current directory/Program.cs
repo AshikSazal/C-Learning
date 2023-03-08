@@ -1,4 +1,5 @@
-﻿
+using System.Text;
+
 namespace Example
 {
     class Program1
@@ -11,6 +12,11 @@ namespace Example
             {
                 File.Create(path);
             }
+
+            FileStream fs = File.Open(path, FileMode.Append);
+            byte[] info = new UTF8Encoding(true).GetBytes("Hello world");
+            fs.Write(info, 0, info.Length);
+            fs.Close();
         }
     }
 }
