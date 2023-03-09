@@ -46,6 +46,7 @@ namespace MultipleInheritance
 
             foreach(Money money in wallet){
                 Console.WriteLine("Bill " + money.amount);
+//                 Debug.WriteLine("Bill " + money.amount);
             }
         }
     }
