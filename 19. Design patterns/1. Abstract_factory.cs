@@ -2,7 +2,7 @@ using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MultipleInheritance
+namespace ConsoleApp
 {
     interface IMobile
     {
