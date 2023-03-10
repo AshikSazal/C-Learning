@@ -9,6 +9,7 @@ namespace MultipleInheritance
     {
         static void Main()
         {
+            // use this for thread safe collection and when implement parallel programming
             ConcurrentBag<int> bag = new ConcurrentBag<int>();
             List<Task> tasks = new List<Task>();
             for(int i=0; i<100; i++)
