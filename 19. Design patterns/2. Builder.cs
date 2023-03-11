@@ -120,9 +120,19 @@ namespace ConsoleApp
             
             ComputerCreator computerACreator = new ComputerCreator(new ComputerABuilder());
             computerACreator.CreateComputer();
+            Debug.WriteLine(computerACreator.GetComputer().Monitor);
+            Debug.WriteLine(computerACreator.GetComputer().Mouse);
+            Debug.WriteLine(computerACreator.GetComputer().Keyboard);
+            Debug.WriteLine(computerACreator.GetComputer().Printer);
+            Debug.WriteLine(computerACreator.GetComputer().Tower);
 
             ComputerCreator computerBCreator = new ComputerCreator(new ComputerBBuilder());
             computerBCreator.CreateComputer();
+            Debug.WriteLine(computerBCreator.GetComputer().Monitor);
+            Debug.WriteLine(computerBCreator.GetComputer().Mouse);
+            Debug.WriteLine(computerBCreator.GetComputer().Keyboard);
+            Debug.WriteLine(computerBCreator.GetComputer().Printer);
+            Debug.WriteLine(computerBCreator.GetComputer().Tower);
         }
     }
 }
